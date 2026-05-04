@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Slide from '@/components/Slide';
 import SlideHeader from '@/components/SlideHeader';
 import SlideTitle from '@/components/SlideTitle';
+import { assetPath } from '@/lib/assetPath';
 
 export default function PolicyEngineBackgroundSlide() {
   return (
@@ -34,7 +35,7 @@ export default function PolicyEngineBackgroundSlide() {
         <div className="flex flex-col items-center gap-4">
           <div className="content-card overflow-hidden">
             <Image
-              src="/screenshots/pe-homepage.png"
+              src={assetPath("/screenshots/pe-homepage.png")}
               alt="PolicyEngine homepage"
               width={560}
               height={350}
