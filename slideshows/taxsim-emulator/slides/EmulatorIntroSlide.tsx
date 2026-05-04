@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Slide from '@/components/Slide';
 import SlideHeader from '@/components/SlideHeader';
 import SlideTitle from '@/components/SlideTitle';
+import { assetPath } from '@/lib/assetPath';
 
 export default function EmulatorIntroSlide() {
   return (
@@ -34,7 +35,7 @@ export default function EmulatorIntroSlide() {
         <div className="flex flex-col items-center gap-4">
           <div className="content-card overflow-hidden">
             <Image
-              src="/screenshots/pe-taxsim-runner.png"
+              src={assetPath("/screenshots/pe-taxsim-runner.png")}
               alt="PolicyEngine TAXSIM web runner"
               width={600}
               height={375}

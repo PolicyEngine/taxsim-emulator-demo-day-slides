@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Slide from '@/components/Slide';
 import SlideHeader from '@/components/SlideHeader';
 import SlideTitle from '@/components/SlideTitle';
+import { assetPath } from '@/lib/assetPath';
 
 export default function TaxsimBackgroundSlide() {
   return (
@@ -34,7 +35,7 @@ export default function TaxsimBackgroundSlide() {
         <div className="flex flex-col items-center gap-4">
           <div className="content-card overflow-hidden">
             <Image
-              src="/screenshots/taxsim-website.png"
+              src={assetPath("/screenshots/taxsim-website.png")}
               alt="TAXSIM-35 website on NBER"
               width={560}
               height={350}
