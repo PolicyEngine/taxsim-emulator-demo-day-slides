@@ -111,10 +111,6 @@ export default function EmulatorIntroSlide() {
                 <p className="text-sm font-semibold text-gray-700">Comparison</p>
                 <p className="text-xs text-gray-500">PE vs TAXSIM</p>
               </div>
-              <div className="bg-white rounded-md px-3 py-2 text-center border border-gray-200">
-                <p className="text-sm font-semibold text-gray-700">Dashboard</p>
-                <p className="text-xs text-gray-500">Interactive</p>
-              </div>
             </div>
           </div>
 
@@ -136,7 +132,7 @@ export default function EmulatorIntroSlide() {
           </div>
           <div className="accent-block">
             <p className="text-lg text-gray-800 font-semibold">Built-in validation</p>
-            <p className="text-sm text-gray-600 mt-1">Compare mode with interactive dashboard</p>
+            <p className="text-sm text-gray-600 mt-1">Compare mode runs both engines side-by-side</p>
           </div>
         </div>
       </div>
