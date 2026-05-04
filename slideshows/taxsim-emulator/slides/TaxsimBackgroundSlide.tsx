@@ -44,6 +44,8 @@ export default function TaxsimBackgroundSlide() {
           </div>
           <a
             href="https://taxsim.nber.org/taxsim35/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-lg font-medium text-pe-teal hover:text-pe-dark transition-colors underline underline-offset-4"
           >
             taxsim.nber.org/taxsim35

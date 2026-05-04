@@ -7,8 +7,9 @@ export default function AgendaSlide() {
   const items = [
     { number: '01', title: 'What is TAXSIM?', description: 'NBER\'s FORTRAN tax calculator since 1993' },
     { number: '02', title: 'What is PolicyEngine?', description: 'Open-source microsimulation for tax and benefit policy' },
-    { number: '03', title: 'The next chapter of TAXSIM', description: 'Drop-in replacement powered by PolicyEngine' },
-    { number: '04', title: 'Live Demo', description: 'See it in action' },
+    { number: '03', title: 'Who runs on PolicyEngine', description: 'Governments, researchers, navigators, and households' },
+    { number: '04', title: 'The next chapter of TAXSIM', description: 'Drop-in replacement powered by PolicyEngine' },
+    { number: '05', title: 'Live Demo', description: 'See it in action' },
   ];
 
   return (

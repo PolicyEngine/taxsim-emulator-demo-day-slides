@@ -71,7 +71,7 @@ function SlideshowViewerClient({ slideCount, children, slideshowId }: SlideshowV
 
   const handleMainClick = (e: React.MouseEvent) => {
     const target = e.target as HTMLElement;
-    if (target.closest('.pointer-events-auto')) {
+    if (target.closest('.pointer-events-auto') || target.closest('a')) {
       return;
     }
     setCurrentSlide((prev) => Math.min(prev + 1, slideCount - 1));

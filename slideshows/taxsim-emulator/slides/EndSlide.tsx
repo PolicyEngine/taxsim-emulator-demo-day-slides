@@ -17,6 +17,8 @@ export default function EndSlide() {
         <div className="flex gap-8 mt-8">
           <a
             href="https://github.com/PolicyEngine/policyengine-taxsim"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-6 py-3 bg-white/20 hover:bg-white/30 rounded-lg text-white font-medium transition-colors"
           >
             github.com/PolicyEngine/policyengine-taxsim

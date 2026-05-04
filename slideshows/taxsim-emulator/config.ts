@@ -3,6 +3,7 @@ import CoverSlide from './slides/CoverSlide';
 import AgendaSlide from './slides/AgendaSlide';
 import TaxsimBackgroundSlide from './slides/TaxsimBackgroundSlide';
 import PolicyEngineBackgroundSlide from './slides/PolicyEngineBackgroundSlide';
+import WhoUsesItSlide from './slides/WhoUsesItSlide';
 import EmulatorIntroSlide from './slides/EmulatorIntroSlide';
 import DemoSlide from './slides/DemoSlide';
 import EndSlide from './slides/EndSlide';
@@ -18,6 +19,7 @@ export const taxsimEmulatorConfig: SlideshowConfig = {
     AgendaSlide,
     TaxsimBackgroundSlide,
     PolicyEngineBackgroundSlide,
+    WhoUsesItSlide,
     EmulatorIntroSlide,
     DemoSlide,
     EndSlide,
