@@ -1,5 +1,6 @@
 import { SlideshowConfig } from '@/lib/types';
 import CoverSlide from './slides/CoverSlide';
+import AgendaSlide from './slides/AgendaSlide';
 import TaxsimBackgroundSlide from './slides/TaxsimBackgroundSlide';
 import PolicyEngineBackgroundSlide from './slides/PolicyEngineBackgroundSlide';
 import EmulatorIntroSlide from './slides/EmulatorIntroSlide';
@@ -14,6 +15,7 @@ export const taxsimEmulatorConfig: SlideshowConfig = {
   location: 'Demo Day',
   slides: [
     CoverSlide,
+    AgendaSlide,
     TaxsimBackgroundSlide,
     PolicyEngineBackgroundSlide,
     EmulatorIntroSlide,

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Slide from '@/components/Slide';
 import SlideHeader from '@/components/SlideHeader';
 import SlideTitle from '@/components/SlideTitle';
@@ -7,48 +8,45 @@ export default function EmulatorIntroSlide() {
   return (
     <Slide>
       <SlideHeader>
-        <SlideTitle>The TAXSIM Emulator</SlideTitle>
+        <SlideTitle>The next chapter of TAXSIM</SlideTitle>
       </SlideHeader>
 
-      <div className="two-col mt-4">
+      <div className="two-col">
         <div className="space-y-6">
-          <div className="content-card p-6">
-            <h3 className="text-2xl font-bold text-pe-dark mb-3">What it does</h3>
-            <p className="text-xl text-gray-700 leading-relaxed">
-              Accepts TAXSIM-formatted inputs and produces TAXSIM-compatible outputs — powered by PolicyEngine under the hood.
-            </p>
+          <div className="accent-block">
+            <p className="text-2xl text-gray-800 font-semibold">Drop-in replacement</p>
+            <p className="text-lg text-gray-600 mt-1">Same 35 input variables, same CSV format, same output — powered by PolicyEngine</p>
           </div>
-
-          <div className="content-card p-6">
-            <h3 className="text-2xl font-bold text-pe-dark mb-3">Why it matters</h3>
-            <p className="text-xl text-gray-700 leading-relaxed">
-              Researchers can switch from TAXSIM to PolicyEngine without changing their existing workflows or data pipelines.
-            </p>
+          <div className="accent-block">
+            <p className="text-2xl text-gray-800 font-semibold">Year-stitching</p>
+            <p className="text-lg text-gray-600 mt-1">2021+ uses PolicyEngine; earlier years route to TAXSIM-35 automatically</p>
+          </div>
+          <div className="accent-block">
+            <p className="text-2xl text-gray-800 font-semibold">CLI, Web, API, and R</p>
+            <p className="text-lg text-gray-600 mt-1">Use it however you work — from the command line, browser, REST API, or R package</p>
+          </div>
+          <div className="accent-block">
+            <p className="text-2xl text-gray-800 font-semibold">Built-in validation</p>
+            <p className="text-lg text-gray-600 mt-1">Compare mode runs both engines side-by-side with an interactive dashboard</p>
           </div>
         </div>
 
-        <div className="space-y-6">
-          <div className="content-card p-6">
-            <h3 className="text-2xl font-bold text-pe-dark mb-3">How it works</h3>
-            <ul className="space-y-3 text-xl text-gray-700">
-              <li className="flex items-start gap-3">
-                <span className="text-pe-teal font-bold">1.</span>
-                <span>Parse TAXSIM input format</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-pe-teal font-bold">2.</span>
-                <span>Map to PolicyEngine household</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-pe-teal font-bold">3.</span>
-                <span>Run PolicyEngine simulation</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-pe-teal font-bold">4.</span>
-                <span>Convert results to TAXSIM output</span>
-              </li>
-            </ul>
+        <div className="flex flex-col items-center gap-4">
+          <div className="content-card overflow-hidden">
+            <Image
+              src="/screenshots/pe-taxsim-runner.png"
+              alt="PolicyEngine TAXSIM web runner"
+              width={600}
+              height={375}
+              className="w-full h-auto"
+            />
           </div>
+          <a
+            href="https://www.policyengine.org/us/taxsim"
+            className="text-xl font-semibold text-pe-teal hover:text-pe-dark transition-colors underline underline-offset-4"
+          >
+            policyengine.org/us/taxsim
+          </a>
         </div>
       </div>
     </Slide>
