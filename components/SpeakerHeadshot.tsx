@@ -37,24 +37,24 @@ export default function SpeakerHeadshot({
         .slice(0, 2)
     : '??';
 
-  const fullImageUrl = imageUrl ? assetPath(imageUrl) : undefined;
+  const checkUrl = imageUrl ? assetPath(imageUrl) : undefined;
   const [imageExists, setImageExists] = React.useState(false);
 
   React.useEffect(() => {
-    if (fullImageUrl) {
+    if (checkUrl) {
       const img = new window.Image();
       img.onload = () => setImageExists(true);
       img.onerror = () => setImageExists(false);
-      img.src = fullImageUrl;
+      img.src = checkUrl;
     }
-  }, [fullImageUrl]);
+  }, [checkUrl]);
 
   return (
     <div className={`${positionClasses[position]} ${position === 'center' ? 'text-center' : ''}`}>
       <div className={`${sizeClasses[size]} relative overflow-hidden rounded-full bg-pe-teal/20 border-2 border-pe-teal`}>
-        {fullImageUrl && imageExists ? (
+        {imageUrl && imageExists ? (
           <Image
-            src={fullImageUrl}
+            src={checkUrl!}
             alt={`${name} headshot`}
             fill
             className="object-cover"
