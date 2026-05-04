@@ -15,20 +15,20 @@ export default function PolicyEngineBackgroundSlide() {
       <div className="two-col">
         <div className="space-y-6">
           <div className="accent-block">
-            <p className="text-2xl text-gray-800 font-semibold">Open-source microsimulation</p>
-            <p className="text-lg text-gray-600 mt-1">Transparent, auditable tax and benefit calculations</p>
+            <p className="text-2xl text-gray-800 font-semibold">Free, open-source policy analysis</p>
+            <p className="text-lg text-gray-600 mt-1">All code is public on GitHub; transparent, auditable calculations</p>
           </div>
           <div className="accent-block">
-            <p className="text-2xl text-gray-800 font-semibold">Comprehensive US tax code</p>
-            <p className="text-lg text-gray-600 mt-1">Federal and state income taxes, credits, deductions, and benefits</p>
+            <p className="text-2xl text-gray-800 font-semibold">Household and population modeling</p>
+            <p className="text-lg text-gray-600 mt-1">Calculate taxes and benefits for any household, or simulate impacts across the population</p>
           </div>
           <div className="accent-block">
-            <p className="text-2xl text-gray-800 font-semibold">Modern Python architecture</p>
-            <p className="text-lg text-gray-600 mt-1">Built on policyengine-us with vectorized computations</p>
+            <p className="text-2xl text-gray-800 font-semibold">US and UK coverage</p>
+            <p className="text-lg text-gray-600 mt-1">Federal and state income taxes, SNAP, Medicaid, SSI, TANF, and more across all 50 states</p>
           </div>
           <div className="accent-block">
             <p className="text-2xl text-gray-800 font-semibold">Policy reform modeling</p>
-            <p className="text-lg text-gray-600 mt-1">Simulate the impact of policy changes — something TAXSIM cannot do</p>
+            <p className="text-lg text-gray-600 mt-1">Simulate hypothetical policy changes and measure effects on poverty, inequality, and budgets</p>
           </div>
         </div>
 
