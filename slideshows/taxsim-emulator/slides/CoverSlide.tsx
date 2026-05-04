@@ -38,7 +38,7 @@ export default function CoverSlide() {
             />
             <div className="text-center">
               <p className="text-white font-semibold text-lg">Dan Feenberg</p>
-              <p className="text-white/70 text-sm">Research Associate, NBER</p>
+              <p className="text-white/70 text-sm">IT Director, NBER</p>
             </div>
           </div>
         </div>
