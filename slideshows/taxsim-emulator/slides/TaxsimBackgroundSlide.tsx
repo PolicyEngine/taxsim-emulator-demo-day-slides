@@ -28,7 +28,7 @@ export default function TaxsimBackgroundSlide() {
           </div>
           <div className="accent-block">
             <p className="text-2xl text-gray-800 font-semibold">35 input variables</p>
-            <p className="text-lg text-gray-600 mt-1">Hence &quot;TAXSIM-35&quot; — covers demographics, income, expenses, and filing options</p>
+            <p className="text-lg text-gray-600 mt-1">Covers demographics, income, expenses, and filing options</p>
           </div>
         </div>
 
