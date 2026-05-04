@@ -30,7 +30,7 @@ export default function EmulatorIntroSlide() {
         <SlideTitle>The next chapter of TAXSIM</SlideTitle>
       </SlideHeader>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col mt-6">
         {/* Architecture diagram */}
         <div className="flex items-center gap-4 w-full">
 
@@ -117,22 +117,18 @@ export default function EmulatorIntroSlide() {
         </div>
 
         {/* Key points */}
-        <div className="grid grid-cols-4 gap-4 mt-10">
-          <div className="accent-block">
-            <p className="text-lg text-gray-800 font-semibold">Drop-in replacement</p>
-            <p className="text-sm text-gray-600 mt-1">Same 35 inputs, same CSV format, same output</p>
+        <div className="grid grid-cols-3 gap-6 mt-10">
+          <div className="bg-pe-teal/10 rounded-xl p-5 text-center">
+            <p className="text-2xl font-bold text-pe-dark">Validated</p>
+            <p className="text-base text-gray-600 mt-2">Both models compared side-by-side from the 2021 tax year</p>
           </div>
-          <div className="accent-block">
-            <p className="text-lg text-gray-800 font-semibold">Year-stitching</p>
-            <p className="text-sm text-gray-600 mt-1">2021+ uses PolicyEngine; earlier years route to TAXSIM-35</p>
+          <div className="bg-pe-teal/10 rounded-xl p-5 text-center">
+            <p className="text-2xl font-bold text-pe-dark">Open source</p>
+            <p className="text-base text-gray-600 mt-2">All code is public on GitHub — inspect, contribute, or fork</p>
           </div>
-          <div className="accent-block">
-            <p className="text-lg text-gray-800 font-semibold">Every TAXSIM interface</p>
-            <p className="text-sm text-gray-600 mt-1">Stata, R, SAS, Python, Julia, web runner, API, CLI</p>
-          </div>
-          <div className="accent-block">
-            <p className="text-lg text-gray-800 font-semibold">Built-in validation</p>
-            <p className="text-sm text-gray-600 mt-1">Compare mode runs both engines side-by-side</p>
+          <div className="bg-pe-teal/10 rounded-xl p-5 text-center">
+            <p className="text-2xl font-bold text-pe-dark">Web interface</p>
+            <p className="text-base text-gray-600 mt-2">Run calculations directly at policyengine.org/us/taxsim</p>
           </div>
         </div>
       </div>

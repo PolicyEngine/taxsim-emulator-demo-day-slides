@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'TAXSIM Emulator - PolicyEngine Demo Day',
   description: 'Demo day presentation for the PolicyEngine TAXSIM Emulator',
   icons: {
-    icon: '/favicon.svg',
+    icon: '/taxsim-emulator-demo-day-slides/favicon.svg',
   },
 };
 

@@ -24,6 +24,8 @@ export default function DemoSlide() {
         </div>
         <a
           href="https://www.policyengine.org/us/taxsim"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-3xl font-semibold text-pe-teal hover:text-pe-dark transition-colors underline underline-offset-8"
         >
           policyengine.org/us/taxsim
