@@ -2,6 +2,7 @@
 const nextConfig = {
   output: 'export',
   basePath: '/taxsim-emulator-demo-day-slides',
+  trailingSlash: true,
   images: {
     unoptimized: true,
   },
