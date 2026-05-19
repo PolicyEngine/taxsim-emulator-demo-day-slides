@@ -30,23 +30,25 @@
   --slide-bg: #FAFCFD;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  background: var(--slide-bg);
-  color: #1a1a1a;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--slide-bg);
+    color: #1a1a1a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-a {
-  color: inherit;
-  text-decoration: none;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 /* ==================== SLIDE FOUNDATIONS ==================== */
@@ -88,7 +90,6 @@ a {
   .gradient-footer {
     background: linear-gradient(90deg, var(--pe-teal) 0%, var(--pe-dark) 100%);
     box-shadow: 0 -4px 30px rgba(0,0,0,0.12);
-    position: relative;
   }
 
   .gradient-footer::before {
