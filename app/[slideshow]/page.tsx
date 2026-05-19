@@ -6,15 +6,16 @@ export function generateStaticParams() {
   return getAllSlideshowMetadata().map(s => ({ slideshow: s.id }));
 }
 
-export default function SlideshowPage({ params }: { params: { slideshow: string } }) {
-  const slideshow = getSlideshowById(params.slideshow);
+export default async function SlideshowPage({ params }: { params: Promise<{ slideshow: string }> }) {
+  const { slideshow: slideshowId } = await params;
+  const slideshow = getSlideshowById(slideshowId);
 
   if (!slideshow) {
     redirect('/');
   }
 
   return (
-    <SlideshowViewer slideCount={slideshow.slides.length} slideshowId={params.slideshow}>
+    <SlideshowViewer slideCount={slideshow.slides.length} slideshowId={slideshowId}>
       {slideshow.slides.map((SlideComponent, index) => (
         <SlideComponent key={index} />
       ))}
