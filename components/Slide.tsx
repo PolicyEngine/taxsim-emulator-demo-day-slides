@@ -5,6 +5,8 @@ import { assetPath } from '@/lib/assetPath';
 export interface SlideProps {
   children: ReactNode;
   className?: string;
+  showHeader?: boolean;
+  /** @deprecated alias of showHeader, kept for back-compat */
   showFooter?: boolean;
   isCover?: boolean;
   isEnd?: boolean;
@@ -13,10 +15,12 @@ export interface SlideProps {
 export default function Slide({
   children,
   className = '',
-  showFooter = true,
+  showHeader,
+  showFooter,
   isCover = false,
   isEnd = false,
 }: SlideProps) {
+  const showChrome = showHeader ?? showFooter ?? true;
   return (
     <div className={`
       relative w-screen h-screen flex flex-col
@@ -37,7 +41,7 @@ export default function Slide({
 
       <div className={`
         absolute inset-0
-        ${isCover || isEnd ? 'flex items-center justify-center' : 'pt-24 pb-28'}
+        ${isCover || isEnd ? 'flex items-center justify-center' : 'pt-28 pb-16'}
       `}>
         <div className={`
           w-full h-full
@@ -47,8 +51,8 @@ export default function Slide({
         </div>
       </div>
 
-      {showFooter && !isCover && !isEnd && (
-        <div className="absolute bottom-0 left-0 right-0 h-20 gradient-footer flex items-center justify-between px-16">
+      {showChrome && !isCover && !isEnd && (
+        <div className="absolute top-0 left-0 right-0 h-20 gradient-header flex items-center justify-between px-16">
           <Image
             src={assetPath("/logos/white.svg")}
             alt="PolicyEngine"

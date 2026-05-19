@@ -87,27 +87,27 @@
     pointer-events: none;
   }
 
-  .gradient-footer {
+  .gradient-header {
     background: linear-gradient(90deg, var(--pe-teal) 0%, var(--pe-dark) 100%);
-    box-shadow: 0 -4px 30px rgba(0,0,0,0.12);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.12);
   }
 
-  .gradient-footer::before {
+  .gradient-header::after {
     content: '';
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     height: 1px;
     background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.3) 50%, transparent 100%);
   }
 
-  .gradient-bg .gradient-footer {
+  .gradient-bg .gradient-header {
     background: transparent !important;
     box-shadow: none !important;
   }
 
-  .gradient-bg .gradient-footer::before {
+  .gradient-bg .gradient-header::after {
     display: none;
   }
 }
