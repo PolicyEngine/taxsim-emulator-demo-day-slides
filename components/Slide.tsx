@@ -61,7 +61,7 @@ export default function Slide({
             className="opacity-90"
           />
           <div className="text-white text-sm opacity-90 font-medium">
-            TAXSIM Emulator · Demo Day
+            TAXSIM Emulator · PSL Demo Day
           </div>
         </div>
       )}

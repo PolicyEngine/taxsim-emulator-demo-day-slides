@@ -12,7 +12,7 @@ export default function CoverSlide() {
         </SlideTitle>
 
         <p className="text-3xl text-white/80 font-light text-center">
-          Bringing TAXSIM compatibility to PolicyEngine
+          The next chapter of TAXSIM
         </p>
 
         <div className="flex items-center gap-16 pt-4">
@@ -45,7 +45,7 @@ export default function CoverSlide() {
 
         <div className="flex items-center gap-10 pt-2">
           <div className="text-center">
-            <p className="text-white/50 text-xs uppercase tracking-[0.2em] mb-2">Demo Day</p>
+            <p className="text-white/50 text-xs uppercase tracking-[0.2em] mb-2">PSL Demo Day</p>
             <p className="text-white font-medium text-lg">May 2026</p>
           </div>
         </div>

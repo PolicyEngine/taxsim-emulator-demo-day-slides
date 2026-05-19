@@ -26,7 +26,7 @@ export default function EndSlide() {
         </div>
 
         <div className="mt-12 text-white/60 text-sm">
-          PolicyEngine &middot; Demo Day &middot; May 2026
+          PolicyEngine &middot; PSL Demo Day &middot; May 2026
         </div>
       </div>
     </Slide>
