@@ -16,7 +16,7 @@ export default function TaxsimBackgroundSlide() {
         <div className="space-y-6">
           <div className="accent-block">
             <p className="text-2xl text-gray-800 font-semibold">NBER&apos;s FORTRAN tax calculator</p>
-            <p className="text-lg text-gray-600 mt-1">Introduced in a 1993 paper by Feenberg &amp; Coutts; the standard tool for academic tax research</p>
+            <p className="text-lg text-gray-600 mt-1">Introduced in 1977 by Feenberg &amp; Coutts; the standard tool for academic tax research</p>
           </div>
           <div className="accent-block">
             <p className="text-2xl text-gray-800 font-semibold">Federal and state income taxes</p>
