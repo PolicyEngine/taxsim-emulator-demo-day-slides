@@ -38,7 +38,7 @@ export default function EmulatorIntroSlide() {
           <div className="flex flex-col items-center min-w-[130px]">
             <p className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2">Interfaces</p>
             <div className="bg-gray-50 border-2 border-gray-200 rounded-xl p-3 w-full text-center space-y-1.5">
-              {['Stata', 'R', 'SAS', 'Python', 'Julia', 'Web', 'CLI', 'API'].map((name) => (
+              {['Stata', 'R', 'SAS', 'Python', 'Julia', 'Web', 'CLI'].map((name) => (
                 <div key={name} className="bg-white rounded-md px-3 py-1 text-sm font-medium text-gray-700 border border-gray-200">
                   {name}
                 </div>

@@ -16,11 +16,11 @@ const segments = [
   },
   {
     label: 'Government & Hill',
-    detail: 'Joint Economic Committee Republicans built an Immigration Fiscal Impact Calculator on PolicyEngine. 10 Downing Street, BEA, and others cite or use the model.',
+    detail: 'The Joint Economic Committee built an Immigration Fiscal Impact Calculator on PolicyEngine. 10 Downing Street, BEA, and others cite or use the model.',
   },
   {
     label: 'Research',
-    detail: 'Brookings, Niskanen, AEI, NBER TAXSIM, Atlanta Fed, Georgetown, USC, UMich, UHERO, CRFB compare against, cite, or build on PolicyEngine.',
+    detail: 'Brookings, Niskanen, AEI, Atlanta Fed, Georgetown, USC, UMich, UHERO, CRFB compare against, cite, or build on PolicyEngine.',
   },
 ];
 
